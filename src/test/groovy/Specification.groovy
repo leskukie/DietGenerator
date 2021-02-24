@@ -1,6 +1,10 @@
 import com.leskukie.DietGenerator.model.Product
 import com.leskukie.DietGenerator.model.ProductType
 import com.leskukie.DietGenerator.repository.ProductRepository
+import com.leskukie.dietgenerator.model.Product
+import com.leskukie.dietgenerator.model.ProductType
+import com.leskukie.dietgenerator.repository.ProductRepository
+import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager

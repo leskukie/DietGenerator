@@ -1,4 +1,4 @@
-package com.leskukie.DietGenerator.model;
+package com.leskukie.dietgenerator.model;
 
 import java.util.List;
 import lombok.Getter;
@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Meal {
+public class Diet {
 	private String name;
-	private List<Ingredient> ingredients;
+	private List<Meal> meals;
 }

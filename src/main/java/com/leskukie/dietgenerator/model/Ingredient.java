@@ -1,4 +1,4 @@
-package com.leskukie.DietGenerator.model;
+package com.leskukie.dietgenerator.model;
 
 import lombok.Getter;
 import lombok.Setter;

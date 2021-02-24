@@ -1,8 +1,8 @@
-package com.leskukie.DietGenerator.controller;
+package com.leskukie.dietgenerator.controller;
 
 import java.util.List;
-import com.leskukie.DietGenerator.model.Product;
-import com.leskukie.DietGenerator.repository.ProductRepository;
+import com.leskukie.dietgenerator.model.Product;
+import com.leskukie.dietgenerator.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-@RestController("/product")
+@RestController("/products")
 public class ProductController {
 
-	private ProductRepository productRepository;
+	private final ProductRepository productRepository;
 
 	@Autowired
 	public ProductController(ProductRepository productRepository) {

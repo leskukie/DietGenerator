@@ -1,4 +1,4 @@
-package com.leskukie.DietGenerator;
+package com.leskukie.dietgenerator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
