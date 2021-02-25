@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -21,21 +22,21 @@ public class Product {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
-	@Column(nullable = false)
+	@Column
 	private String name;
 
-	@Column(nullable = false)
+	@Column
 	private float energy;
 
-	@Column(nullable = false)
+	@Column
 	private float proteins;
 
-	@Column(nullable = false)
+	@Column
 	private float fats;
 
-	@Column(nullable = false)
+	@Column
 	private float carbs;
 
-	@Column(nullable = false)
+	@Column
 	private List<ProductType> types;
 }
