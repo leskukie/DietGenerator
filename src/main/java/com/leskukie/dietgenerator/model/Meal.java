@@ -1,6 +1,7 @@
 package com.leskukie.dietgenerator.model;
 
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,7 +22,8 @@ public class Meal {
 	@Column
 	private String name;
 
-	@OneToMany
+	@OneToMany(cascade = CascadeType.ALL,
+			orphanRemoval = true)
 	@Column
 	private List<Ingredient> ingredients;
 }
