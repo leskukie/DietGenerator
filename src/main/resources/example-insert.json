@@ -1,0 +1,8 @@
+{
+  "name":"Banana",
+  "energy": 97.0,
+  "proteins":1.0,
+  "fats":0.3,
+  "carbs":21.8,
+  "types": ["VEGE", "VEGAN", "HEALTHY"]
+}
