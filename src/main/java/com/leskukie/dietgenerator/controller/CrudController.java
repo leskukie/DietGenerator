@@ -15,8 +15,12 @@ import java.util.List;
 
 public abstract class CrudController<T, R extends JpaRepository<T, Long>> {
 
-    @Autowired
     private R repository;
+
+    @Autowired
+    public CrudController(R repository) {
+        this.repository = repository;
+    }
 
     @GetMapping
     public List<T> getAll() {

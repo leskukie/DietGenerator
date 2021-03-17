@@ -9,6 +9,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -43,4 +44,8 @@ public class Product {
 	@ElementCollection(targetClass = ProductType.class)
 	@Enumerated(EnumType.STRING)
 	private List<ProductType> types;
+
+	@OneToOne(mappedBy = "product")
+	private Ingredient ingredient;
+
 }
